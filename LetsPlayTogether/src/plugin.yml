@@ -1,0 +1,42 @@
+name: LetsPlayTogether
+version: 1.0
+author: Innoberger
+main: de.cynfos.lpt.Main
+description: A collection of my former plugins AutoWeather, LPTeleport and PrivateWarp.
+
+commands:
+   day:
+      usage: /<command>
+      decription: Vote for skipping the night in your world.
+   home:
+      usage: /<command>
+      aliases: [sethome]
+      description: Teleport home. / Set your home.
+   tpa:
+      usage: /<command> <player>
+      aliases: [tpahere]
+      description: Send a teleportation request (TPA).
+   tpaccept:
+      usage: /<command>
+      aliases: [tpdeny]
+      description: Accept / deny a TPA request.
+   ping:
+      usage: /<command>
+      description: Display your current ping to server.
+   pwarp:
+      usage: /<command> [name]
+      description: Teleport to one of your private warps. / Display your private warp statistics.
+   setpwarp:
+      usage: /<command> <name> [true]
+      description: Create a private warp.
+   delpwarp:
+      usage: /<command> <name>
+      description: Delete a private warp.
+      
+permissions:
+   privatewarp.admin:
+      default: false
+   privatewarp.vip:
+      default: false
+   privatewarp.member:
+      default: true
